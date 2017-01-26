@@ -6,4 +6,5 @@
                ppx_driver
                ppx_traverse_builtins
                ppx_metaquot_lifters))
-  (preprocess  no_preprocessing)))
+  (preprocess  no_preprocessing)
+  (js_of_ocaml ())))
