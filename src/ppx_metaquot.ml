@@ -15,6 +15,10 @@ module Make(M : sig
     inherit [M.result] Ast_traverse.lift as super
     inherit! M.std_lifters loc
 
+    method! attribute x =
+      Attribute.mark_as_handled_manually x;
+      super#attribute x
+
     method! location _ = M.location loc
     method! attributes x =
       match M.attributes with
