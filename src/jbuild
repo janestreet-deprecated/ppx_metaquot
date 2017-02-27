@@ -8,3 +8,5 @@
                ppx_metaquot_lifters))
   (preprocess  no_preprocessing)
   (js_of_ocaml ())))
+
+(jbuild_version jane_street)

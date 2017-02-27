@@ -4,3 +4,5 @@
   (libraries   (ppx_core ppx_traverse_builtins))
   (preprocess  no_preprocessing)
   (js_of_ocaml ())))
+
+(jbuild_version jane_street)
