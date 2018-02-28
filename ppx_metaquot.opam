@@ -9,9 +9,7 @@ build: [
   ["jbuilder" "build" "-p" name "-j" jobs]
 ]
 depends: [
-  "ppx_core"
-  "ppx_driver"
-  "ppx_traverse_builtins"
+  "ppxlib"                  {>= "v0.11.0"}
   "jbuilder"                {build & >= "1.0+beta12"}
   "ocaml-migrate-parsetree" {>= "1.0"}
 ]

@@ -3,10 +3,7 @@
   (public_name ppx_metaquot)
   (kind ppx_rewriter)
   (flags (:standard -safe-string))
-  (libraries  (ppx_core
-               ppx_driver
-               ppx_traverse_builtins
-               ppx_metaquot_lifters))
+  (libraries  (ppxlib.metaquot))
   (preprocess  no_preprocessing)
 ))
 
